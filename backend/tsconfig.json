@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "lib": ["esnext"],
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+
+    //quando for buildar o projeto vai fazer a compilação dos arquivos da pasta src que estão em TS para JS na pasta build
+    "rootDir": "src",
+    "outDir": "build"
+  },
+   "include": ["src"], 
+   "exclude": ["node_modules"]
+}

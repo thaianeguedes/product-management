@@ -1,0 +1,24 @@
+{
+  "name": "products-api",
+  "type": "module", 
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.14",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7",
+    "zod": "^4.0.5"
+  }
+}
