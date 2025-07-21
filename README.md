@@ -1,9 +1,10 @@
 
 
+
+<img width="1226" height="839" alt="Captura de tela 2025-07-21 154910" src="https://github.com/user-attachments/assets/2577222a-191e-4b38-a327-5bbbc32f869a" />
+
 # 📦 Product Management
-
 Aplicação fullstack para gerenciamento de produtos, desenvolvido em React no frontend e API RESTful em Node.js no backend.
-
  
 ## 📋 Tecnologias
 
