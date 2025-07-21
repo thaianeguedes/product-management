@@ -6,10 +6,14 @@ import express from 'express';
 import { sequelize } from './database.js';
 import { Product } from './product.js';
 import { productSchema } from './productSchema.js';
+import cors from 'cors';
 
 //cria instancia do servidor express
 const app = express();
 app.use(express.json());
+
+//middleware pra permitir requisições de outras origens 
+app.use(cors());
 
 //Rotas crud. cada rota é uma ação que o cliente pode fazer na api.
 app.get('/products', async (req, res) => {
@@ -48,7 +52,8 @@ app.delete('/products/:id', async (req, res) => {
   res.status(204).send();
 }); //apaga o produto que existe, responde 204 quando deletado com sucesso
 
-app.listen(3000, async () => {
+app.listen(3001, async () => {
   await sequelize.sync();
-  console.log('API rodando em http://localhost:3000');
+  console.log('API rodando em http://localhost:3001');
 }); //porta do servidor e chama o sequelize para criar as tabelas conforme os modelos definidos 
+

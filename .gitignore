@@ -1,10 +1,12 @@
-# Node dependencies
-backend/node_modules/
-frontend/node_modules/
+# Node dependencies (ignora node_modules em qualquer pasta)
+**/node_modules/
 
 # Build outputs
 backend/build/
 frontend/build/
+dist/
+build/
+.next/
 
 # Yarn PnP files
 frontend/.pnp
@@ -15,7 +17,8 @@ frontend/.pnp.js
 backend/coverage/
 frontend/coverage/
 
-# Env files
+# Env files (não subir arquivos sensíveis)
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -36,8 +39,3 @@ yarn-error.log*
 
 # macOS
 .DS_Store
-
-
-
-# Node dependencies (cobre qualquer pasta node_modules)
-**/node_modules/
