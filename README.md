@@ -43,18 +43,6 @@ npm start
 
 ---
 
-🛠️ **Estrutura do Projeto**
-
-```
-/
-├── backend/         # API RESTful com Node.js, Express e Sequelize
-├── frontend/        # Aplicação React com dashboard administrativo
-├── .gitignore       # Arquivos ignorados pelo Git
-└── README.md        # Documentação do projeto
-```
-
----
-
 ⚙️ **Funcionalidades**
 
 * Cadastro, edição e exclusão de produtos
