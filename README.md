@@ -2,10 +2,9 @@
 
 # 📦 Product Management
 
-Aplicação fullstack para gerenciamento de produtos, com dashboard administrativo desenvolvido em React no frontend e API RESTful em Node.js no backend.
+Aplicação fullstack para gerenciamento de produtos, desenvolvido em React no frontend e API RESTful em Node.js no backend.
 
-
-
+ 
 ## 📋 Tecnologias
 
 **Backend:** Node.js, Express, Sequelize, SQLite, TypeScript, Zod
@@ -39,21 +38,15 @@ npm install
 
 4. Execute os servidores:
 
-Abra dois terminais diferentes e execute os comandos abaixo:
+Na raíz do projeto (product-management), execute npm start para iniciar o backend e o frontend juntos.
 
-* No terminal 1 (backend):
-
-```bash
-cd backend
-npm run dev
-```
-
-* No terminal 2 (frontend):
+* Na raíz no projeto:
 
 ```bash
-cd frontend
+
 npm start
 ```
+
 
 5. Acesse a aplicação no navegador:
    [http://localhost:3000](http://localhost:3000)
@@ -71,10 +64,4 @@ Na primeira execução, o backend cria automaticamente o banco de dados SQLite (
 * Validação backend com Zod para garantir integridade dos dados
 * Dashboard responsivo e estilizado com Material UI
 * Busca e filtros dinâmicos para facilitar navegação pelos produtos
-
-
-
-## 📄 Licença
-
-MIT License — consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 

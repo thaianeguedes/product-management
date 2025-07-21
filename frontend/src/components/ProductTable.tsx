@@ -15,6 +15,8 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddProductModal from './AddProductModal';
@@ -98,12 +100,11 @@ const ProductTable = () => {
   sx={{
     display: 'flex',
     minHeight: '30vh',
-    bgcolor: 'rgba(255, 255, 255, 0.2)', // fundo branco translúcido
+   
     borderRadius: 3,                     // bordas arredondadas (3 = 24px)
-    backdropFilter: 'blur(10px)',       // efeito blur
     WebkitBackdropFilter: 'blur(10px)', // suporte Safari
     border: '1px solid rgba(255, 255, 255, 0.3)', // borda sutil
-    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',   // sombra suave opcional
+   
   }}
 >
   {/* conteúdo */}
@@ -112,22 +113,28 @@ const ProductTable = () => {
       {/* Conteúdo principal */}
       <Box sx={{ flexGrow: 1, p: 3 }}>
         {/* Header fake */}
-        <Box
-          sx={{
-            mb: 4,
-            bgcolor: '#fff',
-            borderRadius: 2,
-            boxShadow: 1,
-            p: 2,
-          }}
-        >
-          <Typography variant="h5" fontWeight="bold">
-            Painel de Controle
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Gerencie seus produtos abaixo
-          </Typography>
-        </Box>
+       <Box
+  sx={{
+    mb: 4,
+    bgcolor: '#1976D2',
+    color: '#ffffff',
+    borderRadius: 2,
+    p: 2,
+    display: 'flex',
+    alignItems: 'center',
+    gap: 1.5,
+  }}
+>
+  <DashboardIcon fontSize="large" />
+  <Box>
+    <Typography variant="h5" fontWeight="bold" color="inherit">
+      Painel de Controle
+    </Typography>
+    <Typography variant="body2" color="inherit">
+      Gerencie seus produtos abaixo
+    </Typography>
+  </Box>
+</Box>
 
         {/* Área da Tabela de Produtos */}
         <Box
